@@ -1,0 +1,275 @@
+#footer-widgets p {
+text-transform: none;
+color: #3C3933;	
+}
+
+#footer h2 {
+font-size: 2rem;
+color: #3C3933;
+}
+
+#footer p {
+font-size: 1.3rem;
+line-height: 1;
+}
+
+#footer-widgets img {
+ width: 40%;
+}
+
+#footer-widgets .footer-box .footer-widget:last-child {
+width: 100%;
+}
+
+#filtrering {
+max-width: 100%;
+padding-block: 2rem;
+	display: flex;
+}
+
+#tatoo-oversigt {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 1rem;
+margin-top: 1rem;
+}
+
+button {
+padding-block: 1rem;
+padding-inline: 2rem;
+background-color: #4D502D;
+color: white;
+font-weight: 500;
+text-align: center;
+cursor: pointer;
+border: none;
+margin-right: 1rem;
+}
+
+button:hover {
+transition: 0.5s;
+font-weight: 800;
+}
+
+#filtrering img {
+max-width: 100%;
+cursor: pointer;
+}
+
+.grid_indhold {
+  display: grid;
+}
+
+.grid_indhold img,
+.article_text {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  place-self: center center;
+}
+
+.grid_indhold {
+  cursor: pointer;
+  background: #9E7659;
+}
+
+.grid_indhold img {
+  opacity: 0.7;
+}
+
+.article_text {
+text-align: center;
+color: white;
+z-index: 1;
+opacity: 0;
+}
+
+.article_text:hover {
+opacity: 100;
+transition: 0.5s;
+}
+
+.tatovørFornavn {
+font-weight: 600;
+font-size: 2.5rem;
+margin: 0;
+padding: 0;
+padding-bottom: 0.5rem;
+color: white;
+}
+
+.tatovørDato {
+font-weight: 300;
+font-size: 1.5rem;
+margin: 0;
+padding: 0;
+color: white;
+}
+
+#popop {
+width: 100vw;
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.75);
+justify-content: center;
+align-items: center;
+display: none;
+z-index: 101;
+}
+
+#popop article {
+width: 25%;
+}
+
+#popop img {
+max-height: 100%;
+padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 680px) {
+#filtrering {
+display: grid;
+justify-content: space-around;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+#popop article {
+width: 100%;
+display: none;
+}
+
+#popop {
+opacity: 0;
+}
+
+#filtrering button {
+margin-block: 1rem;
+}
+}
+
+:focus {
+    outline: none;
+		border: none;
+}
+a:focus,
+.focus a {
+	outline: none !important;
+}
+
+.booking_form {
+background-color: #EFECE8;
+margin: 0 auto;
+}
+
+.form_wrapper {
+width: 75%;
+margin: 0 auto;
+padding-block: 4rem;
+}
+
+.form_text {
+width: 60%;
+}
+
+.form_text h1 {
+font-size: 40px;
+font-weight: 200;
+letter-spacing: -2.5px;
+margin-bottom: 1rem;
+line-height: 1.2;
+}
+
+.form_text h2 {
+font-size: 17px;
+font-weight: 500;
+margin-bottom: 1rem;
+
+}
+
+.form_text p {
+font-size: 14px;
+font-weight: 400;
+margin-bottom: 2rem;
+}
+
+
+form {
+font-size: 0.9rem;
+gap: 2rem;
+margin: 0 auto;
+margin-bottom: 1rem;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+textarea {
+font-size: 0.9rem;
+border-radius: 2px;
+border: none;
+color: black;
+padding-left: 0.5rem;
+padding-top: 0.5rem;
+width: 90%;
+}
+
+input {
+border-radius: 0px;
+border: none;
+padding-left: 0.5rem;
+}
+
+input,
+textarea, 
+button {
+display: block;
+}
+
+input {
+margin-bottom: 1rem;
+height: 40px;
+width: 90%;
+}
+
+.formular button {
+margin-top: 1rem;
+}
+
+form input[type=text], form input[type=password], form input[type=email], form input[type=url], form input[type=date], form input[type=month], form input[type=time], form input[type=datetime], form input[type=datetime-local], form input[type=week], form input[type=number], form input[type=search], form input[type=tel], form input[type=color], form select, form textarea {
+    background-color: white;
+}
+
+.form_knap {
+background-color: #4D502D;
+color: white;
+border: none;
+padding-inline: 1.5rem;
+padding-block: 0.5rem;
+cursor: pointer;
+font-size: 1.3rem;
+}
+
+.form_knap:hover {
+font-weight: 700;
+transition: 0.1s;
+}
+
+@media screen and (max-width: 900px) {
+.form_text {
+width: 70%;
+}
+}
+
+@media screen and (max-width: 700px) {
+.form_text {
+width: 100%;
+}
+
+.form_wrapper {
+width: 89%;
+}
+
+form {
+display: block;
+}
+}
