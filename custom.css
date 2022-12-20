@@ -157,6 +157,28 @@ a:focus,
 	outline: none !important;
 }
 
+
+
+#site-navigation a:hover {
+	font-weight: 700;
+
+}
+
+.current-menu-item a {font-weight:800 !important;
+color: #373937 !important;
+}
+
+.menu-item a:hover {font-weight:800 !important;
+color: #373937 !important;}
+
+.elementor-button-content-wrapper:hover {
+	font-weight: 650;
+}
+
+
+
+
+
 .booking_form {
 background-color: #EFECE8;
 margin: 0 auto;
@@ -272,4 +294,11 @@ width: 89%;
 form {
 display: block;
 }
+	
+	.current-menu-item a {font-weight:800 !important;
+color: white !important;
+}
+
+.menu-item a:hover {font-weight:800 !important;
+color: white !important;}
 }
